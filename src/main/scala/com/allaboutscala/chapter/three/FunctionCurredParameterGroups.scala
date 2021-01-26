@@ -8,7 +8,8 @@ object FunctionCurredParameterGroups extends App {
     val totalCost = 2.50 * quantity
     totalCost - (totalCost * discount)
   }
-    println("\nStep 2: How to call a function with curried parameter groups")
-    println(s"Total cost = ${totalCost("Glazed Donut")(10)(0.1)}")
+
+  println("\nStep 2: How to call a function with curried parameter groups")
+  println(s"Total cost = ${totalCost("Glazed Donut")(10)(0.1)}")
 
 }
