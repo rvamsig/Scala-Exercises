@@ -23,5 +23,4 @@ object SingletonObject extends App {
   println("\nStep 5: How to call calculateTotalCost from Step 3")
   println(s"Calculate total cost of the donuts : ${DonutShoppingCart.calculateTotalCost(List())}")
 
-
 }
