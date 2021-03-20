@@ -1,8 +1,3 @@
-name := "Scala-Exercises"
-
-version := "0.1"
-
-scalaVersion := "2.12.4"
 
 val scalaLogging = "com.typesafe.scala-logging" %% "scala-logging" % "3.8.0"
 val logback = "ch.qos.logback" %  "logback-classic" % "1.1.7"
@@ -17,13 +12,12 @@ libraryDependencies ++= Seq (
   jodaConvert
 )
 
-/*
 // ARTIFACTS or DEPENDENCIES
 lazy val artifacts = new {
 
   // artifacts versions
   val scalaV            = "2.11.10"
-  val realworldAllaboutscalaV = "1.0"
+  val scalaexercises    = "1.0"
   val akkaActorV        = "2.5.23"
   val akkaHttpV         = "10.1.8"
   val akkaHttpTestkitV  = "10.1.8"
@@ -56,7 +50,7 @@ lazy val artifacts = new {
 lazy val commonSettings = Seq(
   organization          := "com.realworld.allaboutscala",
   scalaVersion          := artifacts.scalaV,
-  version               := artifacts.realworldAllaboutscalaV,
+  version               := artifacts.scalaexercises,
   logLevel              := Level.Info,
   scalacOptions ++= Seq(
     "-encoding", "UTF-8",
@@ -80,10 +74,9 @@ lazy val testSettings = Seq(
 
 // PROJECT or PROJECTS
 lazy val realworldAllaboutscala = (project in file("."))
-  .settings(name:= "realworld-allaboutscala")
+  .settings(name:= "Scala-Exercises")
   .settings(commonSettings: _*)
   .settings(testSettings: _*)
   .settings(libraryDependencies ++= artifacts.scalaLogging ++ artifacts.akkaHttp ++ artifacts.pureconfig)
   .settings(resolvers += Resolver.sonatypeRepo("releases"))
   .settings(resolvers += Resolver.sonatypeRepo("snapshots"))
-  */

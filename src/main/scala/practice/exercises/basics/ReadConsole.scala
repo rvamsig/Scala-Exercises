@@ -1,6 +1,6 @@
 package practice.exercises.basics
 
 object ReadConsole extends App {
-  val consoleReader = readLine("What is your favourite movie of all time?")
+  val consoleReader = scala.io.StdIn
   println(s"$consoleReader is awesome")
 }
